@@ -76,6 +76,7 @@ class BME280Sensor(CBPiSensor):
                 elif self.OutputType == "pressure":
                     self.value = self.pressure
                 self.push_update(self.value)
+                self.log_data(self.value)
 
                 logger.debug(f"[BME280Sensor] T={self.temperature:.2f}°C, H={self.humidity:.2f}%, P={self.pressure:.2f} hPa")
                 await asyncio.sleep(self.interval)
