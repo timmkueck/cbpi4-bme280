@@ -1,2 +1,2 @@
-include cbpi4-bme280/config.yaml
-recursive-include cbpi4-bme280/static *
+include cbpi4_bme280/config.yaml
+recursive-include cbpi4_bme280/static *
